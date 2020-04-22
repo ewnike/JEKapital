@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Invest</title>
+      <!--<link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+      <link rel = "stylesheet" href = "https://jdevhousing-static.s3.amazonaws.com/static/css/style.css">
+      <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class = "container-fluid" style = "margin-top: 20px; ">
+        <div class = "row">
+          <div class= "col-xs-12 col-sm-12 col-med-12 col-lg-12 col-xl-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand"  href="#">Invest</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active"style= " margin-left: 50px;" href="{% url 'housing:index' %}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link"style= "margin-left: 30px;" href="{% url 'housing:property_list' %}">Properties</a>
+                <a class="nav-item nav-link" style= "margin-left: 30px;"href="{% url 'housing:about_us' %}">About</a>
+                <a class="nav-item nav-link" style = "margin-left: 30px;"href="{% url 'housing:contact' %}">Contact</a>
+              </div>
+            </div>
+         </nav>
+       </div>
+       <div class = "container" style = "margin-bottom: 100px;">
+         <br><h2>Invest</h2><br>
+          <h5>This year, JEKapital, LLC, is embarking on a campaign to raise money for a Building Opportunity Fund
+            needed to address the shortage of housing currently facing the City of Chicago.
+            We are currently raising $1,250,000 to renovate a 28 unit apartment building at 4135 W. Roosevelt Rd, Chicago, IL.
+            The building is located in an Opportunity Zone. Your investment is not a charitable donation; it is a loan to
+            JEKapital, LLC. You will get paid back with interest.
+            The fund is open to both accredited and non-accredited investors alike.
+            Each category of investor will have the exact same terms, prices, and contracts.</h5><br><br>
+         <h3 style = "margin-left:50;">I am:</h3><br>
+         <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Accredited Investor</h5>
+                  <p class="card-text"><strong>I make $200K+ a year or have $1 million in assets, excluding my primary residence.</strong></p>
+                  <!--<a href="#" class="btn btn-secondary">Invest Now</a>-->
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Invest Now</button>
+                  <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Almost Ready!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>We are counting down the days 'til our crowdfund begins! In the meantime, if you have interest
+                              in this project, contact us.'</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href = "{% url 'housing:contact' %}" button type="button" class="btn btn-primary">Contact</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class = "card-body">
+                  <h5 class="card-title">Non-Accredited Investor</h5>
+                  <p class="card-text"><strong>I don't meet the accredited criteria, but I still want to support the housing campaign!</strong></p></p>
+                  <!--<a href="#" class="btn btn-secondary">Invest Now</a>-->
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Invest Now</button>
+                  <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Almost Ready!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>We are counting down the days 'til our crowdfund begins! In the meantime, if you have interest
+                              in this project, contact us.'</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <a href = "{% url 'housing:contact' %}" button type="button" class="btn btn-primary">Contact</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = page-footer style="float:center;margin-top:50px;">
+                <center>
+                  <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                  <script type="IN/FollowCompany" data-id="65037161" data-counter="right"></script><br><br>
+                  <p>&#169; JEKapital, LLC, 2020</p>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

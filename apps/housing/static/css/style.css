@@ -1,0 +1,33 @@
+#wrapper{
+  background-color: #F8FAF0;
+  width: 100%;
+  height:auto;
+  border-color: black;
+  border-width: 8px;
+  border-style: double;
+  margin:0;
+}
+
+@media only screen and (max-width: 480px){
+
+}
+
+@media only screen and (min-width: 481px){
+
+}
+
+
+
+@media only screen and (min-width: 1024px){
+
+}
+.contact_container{
+  margin-top: 100px;
+  text-align:center;
+}
+
+.form_container{
+  display: inline-block;
+  text-align:right;
+  max-width: 100%;
+  height:auto;

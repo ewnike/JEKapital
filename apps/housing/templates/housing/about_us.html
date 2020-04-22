@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>About Us</title>
+    <!--<link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+    <link rel = "stylesheet" href = "https://jdevhousing-static.s3.amazonaws.com/static/css/style.css">
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <div id="wrapper">
+      <div class = "container-fluid" style = "margin-top: 25px;">
+        <div class = "row">
+          <div class= "col-xs-12 col-sm-12 col-med-12 col-lg-12 col-xl-12">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand"  href="#">About</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active"style= " margin-left: 50px;" href="{% url 'housing:index' %}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link"style= "margin-left: 30px;" href="{% url 'housing:property_list' %}">Properties</a>
+                <a class="nav-item nav-link" style= "margin-left: 30px;"href="{% url 'housing:invest' %}">Invest</a>
+                <a class="nav-item nav-link" style= "margin-left: 30px;"href="{% url 'housing:contact' %}">Contact</a>
+              </div>
+            </div>
+         </nav>
+       </div>
+       </div>
+       </div>
+
+       <div class = "container" style = "margin-top:20px; ">
+         <div class = "row">
+           <div class= "col-xs-12 col-sm-12 col-med-12 col-lg-12 col-xl-12">
+         <h4>JEKapital, LLC</h4>
+         <div class = "text-left">
+         <h5 style = "padding-top: 20px; ">Since 2010, JEKapital has been operating in various Chicago Neighborhoods
+           to build and to renovate existings buildings to provide rental housing for the
+           people of Chicago.</h5>
+           <div class = image_container style = "width:60%;height:40%;">
+             <div class = "row">
+               <div class= "col-xs-12 col-sm-12 col-med-12 col-lg-12 col-xl-12">
+                 <img class="pr-md-3 pb-3 float-md-left img-fluid" src= "https://jdevhousing-static.s3.amazonaws.com/static/images/draft.jpg"  > <br>
+               </div>
+             </div>
+           </div>
+           <div>
+           <h5 style = "padding-top: 20px; ">JEK residences have been both planned and built with our core values in mind.
+           A balanced life between work, family, and play. A balanced life that takes advantage of our cities great
+           public transportation and neighborhoods! One that allows you the opportunity to make the most of your time, stick to your budget, and to get the
+           most of everything the city of Chicago has to offer.</h5>
+           <div class = image_container style = "width:60%;height:40%;">
+             <div class = "row">
+               <div class= "col-xs-12 col-sm-12 col-med-12 col-lg-12 col-xl-12">
+                 <img class="pr-md-3 pb-3 float-right img-fluid" src= "https://jdevhousing-static.s3.amazonaws.com/static/images/elevated_train.jpg" >
+               </div>
+             </div>
+           </div>
+             <h5>Interested in living in one of our units? For more information, contact us or follow us on LinkedIn and Facebook!</h5>
+             <div class = image_container style = "width:60%;height:40%;">
+               <div class = "row">
+                 <div class= "col-xs-12 col-sm-12 col-med-12 col-lg-12 col-xl-12">
+                   <img class="pr-md-3 pb-3 float-md-left img-fluid" src= "https://jdevhousing-static.s3.amazonaws.com/static/images/happy_mother_and_child.jpg">
+                 </div>
+               </div>
+             </div>
+              <div class = page-footer style="float:center;margin-bottom:0px;">
+                <center>
+                <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                <script type="IN/FollowCompany" data-id="65037161" data-counter="right"></script><br><br>
+                <p>&#169; JEKapital, LLC, 2020</p>
+              </center>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+  </body>
+</html>
